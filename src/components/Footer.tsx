@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -35,7 +35,9 @@ export const Footer = () => {
                 href="#"
                 className="h-10 w-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
-                <Twitter className="h-4 w-4" />
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
               </a>
             </div>
           </div>
@@ -119,7 +121,7 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-primary-foreground/50 text-sm">
-              © 2024 Artisan Rugs & Carpets. All rights reserved.
+              © 2026 Artisan Rugs & Carpets. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-primary-foreground/50">
               <a href="#" className="hover:text-primary-foreground transition-colors">

@@ -70,7 +70,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="xl"
-                  className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+                  className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
                 >
                   Explore Modern
                 </Button>
@@ -211,7 +211,7 @@ const Index = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+              className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
               View Size Guide
             </Button>
