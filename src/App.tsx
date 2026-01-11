@@ -26,6 +26,10 @@ import Orders from "./pages/admin/Orders";
 
 const queryClient = new QueryClient();
 
+// Get base path from environment variable or use default
+// Remove trailing slash for React Router basename (React Router doesn't need trailing slash)
+const basePath = (import.meta.env.VITE_BASE_PATH || "/shibaam-prototype-2/").replace(/\/$/, "") || "";
+
 // Layout wrapper for public pages
 const PublicLayout = ({ children }: { children: React.ReactNode }) => (
   <>
@@ -42,7 +46,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename={basePath}>
           <Routes>
             {/* Public Routes */}
             <Route
